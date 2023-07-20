@@ -115,6 +115,20 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
+"@storyblok/js@^2.2.2":
+  version "2.2.2"
+  resolved "https://registry.yarnpkg.com/@storyblok/js/-/js-2.2.2.tgz#2b055ca250565721d4d90ae9be1c6c58559228c5"
+  integrity sha512-2Ab4ULgMTRub4q2kqkz5YKhSAQjdhE8hFJ0OsxdMyLx4VSKmO+v7g+oS8iNDz9OWQnbPNdjEza3rqwRCtz0IEA==
+  dependencies:
+    storyblok-js-client "^5.11.1"
+
+"@storyblok/react@^2.2.0":
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/@storyblok/react/-/react-2.2.0.tgz#ee4f3ead82d1bf6894c25c07a8bd5a995b7dd9bd"
+  integrity sha512-7R0vyrwS8Bd4dDfvSnAUvA4tJh3HmMlRk6/8a9z4hswtl8Pe2j+dCa8CtucA/5mQgg1qQHgE0vaJMAUi15MqKw==
+  dependencies:
+    "@storyblok/js" "^2.2.2"
+
 "@swc/helpers@0.5.1":
   version "0.5.1"
   resolved "https://registry.yarnpkg.com/@swc/helpers/-/helpers-0.5.1.tgz#e9031491aa3f26bfcc974a67f48bd456c8a5357a"
@@ -666,6 +680,11 @@ source-map-js@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/source-map-js/-/source-map-js-1.0.2.tgz#adbc361d9c62df380125e7f161f71c826f1e490c"
   integrity sha512-R0XvVJ9WusLiqTCEiGCmICCMplcCkIwwR11mOSD9CR5u+IXYdiseeEuXCVAjS54zqwkLcPNnmU4OeJ6tUrWhDw==
+
+storyblok-js-client@^5.11.1:
+  version "5.12.0"
+  resolved "https://registry.yarnpkg.com/storyblok-js-client/-/storyblok-js-client-5.12.0.tgz#e8100296609d3574990bdb8a7cdf3b031125e193"
+  integrity sha512-g096AwVtRfs+epfvuiQlI4RDTRcn+/h+WxkWQd8rm95MnRzgZMo1LJcg9NQU8Hy172dvrcjH2+DBsPxw0NAoYw==
 
 streamsearch@^1.1.0:
   version "1.1.0"
