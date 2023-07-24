@@ -55,11 +55,6 @@ const Navigation = () => {
                                 Blog
                             </a>
                         </Link>
-                        <Link legacyBehavior href="/services">
-                            <a className="text-base font-medium text-gray-500 hover:text-gray-900">
-                                Services
-                            </a>
-                        </Link>
                     </div>
                 </div>
             </div>
