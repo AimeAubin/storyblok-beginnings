@@ -12,7 +12,7 @@ const Navigation = () => {
                     <div className="flex justify-start lg:w-0 lg:flex-1">
                         <Link legacyBehavior href="/">
                             <a>
-                                <span className="sr-only">Storyblok</span>
+                                <span className="sr-only">ChatterBox</span>
                                 <Image height={ 53 } width={ 251 } src="/logo.svg" alt="Logo" className="h-20 w-auto sm:h-10 hidden sm:block" />
                                 <Image height={ 92 } width={ 92 } src="/logo-mobile.svg" alt="Mobile Logo" className="h-20 w-auto sm:h-10 sm:hidden" />
                             </a>

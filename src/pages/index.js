@@ -2,9 +2,9 @@ import { StoryblokComponent, getStoryblokApi, useStoryblokState } from "@storybl
 import Head from "next/head"
 import Layout from "./components/Layout";
 
-export default function Home ( { story } ) {
-  story = useStoryblokState( story )
-  
+export default function Home ( props ) {
+  const story = props.story
+  const config = props.config
   
   return (
     <div>
@@ -26,17 +26,19 @@ export async function getStaticProps () {
   
   let sbParams = {
     version: "draft",
+    resolve_links: "url",
   }
 
   const storyblokApi = getStoryblokApi()
   let { data } = await storyblokApi.get( `cdn/stories/${ slug }`, sbParams )
+  let { data: config } = await storyblokApi.get( `cdn/stories/config` )
   
   return {
     props: {
       story: data ? data.story : false,
       key: data ? data.story.id : false,
+      config: config ? config.story : false,
     },
     revalidate: 3600,
   }
 }
-
